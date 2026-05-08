@@ -1,5 +1,6 @@
 ---
 theme: seriph
+background: https://raw.githubusercontent.com/visualcomputing/p5.tree/main/p5.tree.png
 class: text-center
 highlighter: shiki
 lineNumbers: true
