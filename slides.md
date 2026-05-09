@@ -91,57 +91,39 @@ A descriptive model proposed by **Lim et al. (2013)** to bridge **pedagogical in
 > *The pedagogical goal (LM) must map onto a play action (GM) that makes the learning invisible yet effective.*
 
 ---
+layout: default
+---
 
 # How to read the LM-GM map
 
-Read it left-to-right: pedagogy on the left becomes gameplay on the right, through deliberate links.
+<div class="text-sm opacity-80 -mt-2">Pedagogy on the left, gameplay on the right — the designer's job is to draw the links.</div>
 
-<div class="grid grid-cols-2 gap-2 text-sm mt-2 mb-1 px-8">
-  <div><b>LEARNING MECHANICS</b> — what the player must <i>learn</i></div>
-  <div><b>GAME MECHANICS</b> — what the player actually <i>does</i></div>
+<div class="text-sm mt-4">
+
+| Learning Mechanic *(what the player must learn)* | → Linked to → | Game Mechanic *(what the player does)* |
+|---|:---:|---|
+| Identify | spot phishing | Selecting / Collecting |
+| Hypothesis | test a plan | Strategy / Planning |
+| Action / Task | act under stress | Capture / Eliminate, Time pressure |
+| Reflect | review progress | Levels |
+| Motivation | earn status | Rewards / Status |
+| Feedback | (direct) | Levels, Feedback |
+
 </div>
 
-```mermaid
-flowchart LR
-  subgraph LM[" "]
-    direction TB
-    LM1[Identify / Explore]
-    LM2[Hypothesis]
-    LM3[Action / Task]
-    LM4[Analyse / Reflect]
-    LM5[Motivation]
-    LM6[Feedback]
-  end
-  subgraph GM[" "]
-    direction TB
-    GM1[Selecting / Collecting]
-    GM2[Strategy / Planning]
-    GM3[Capture / Eliminate]
-    GM4[Time pressure]
-    GM5[Rewards / Status]
-    GM6[Levels]
-  end
-  LM1 -.->|"e.g., spot phishing"| GM1
-  LM2 -.->|"e.g., test a plan"| GM2
-  LM3 -.->|"e.g., do under stress"| GM3
-  LM3 -.-> GM4
-  LM4 -.->|"e.g., review progress"| GM6
-  LM5 -.->|"e.g., earn status"| GM5
-  LM6 -.-> GM6
-```
+<div class="text-xs opacity-75 text-center mt-4">
 
-<div class="text-xs opacity-75 mt-1">
-
-A good Serious Game has **few, deliberate links**. Too many links = noise; none = gameplay disconnected from learning.
+A good Serious Game has **few, deliberate links**. Too many = noise; none = disconnected from learning.
 
 </div>
 
 <!--
 Talking points:
-- LM nodes (left) come from pedagogical theory: behaviorism, constructivism, cognitivism. Examples in the slide are a non-exhaustive subset.
-- GM nodes (right) come from game design literature: Järvinen, Sicart, etc.
-- Dotted arrows are the SGMs — the design decisions you make. Each arrow is a hypothesis: "this game action will make this learning happen."
-- Encourage students to draw their own LM-GM map for their Stage 1 problem before they pick a tool.
+- LM column comes from pedagogical theory: behaviorism, constructivism, cognitivism. The list in this slide is a non-exhaustive subset of what Lim et al. (2013) propose.
+- GM column comes from game design literature: Järvinen, Sicart, Bellotti.
+- The middle column is what Lim et al. call a Serious Game Mechanic (SGM): the design decision that turns a learning goal into a play action. Each row is a hypothesis: "this game action will make this learning happen."
+- Encourage students to draw their own LM-GM table for their Stage 1 problem before they pick a tool.
+- Same idea Lim et al. illustrate with arrows in their Figure 2 — we use a table here for clarity in a slide format.
 -->
 
 ---
@@ -150,16 +132,22 @@ Talking points:
 
 Aligning **what the player thinks** with **what they do** in the game.
 
+<div class="text-xs opacity-70 -mt-2 italic">
+
+The same LM ↔ GM pairs from the previous slide — now grouped by cognitive depth.
+
+</div>
+
 <div class="text-sm">
 
-| Thinking skill (Bloom) | Sample LM | Sample GM |
+| Thinking skill | Sample LM | Sample GM |
 |---|---|---|
-| **Retention** | Discover, Repetition | Cut-scenes, Tokens |
-| **Understanding** | Tutorial, Q&A | Tutorial, Cascading info |
-| **Applying** | Action/Task, Simulation | Selecting/Collecting, Movement |
-| **Analysing** | Identify, Observation | Feedback, Realism |
-| **Evaluating** | Hypothesis, Reflect | Resource Management, Pareto Optimal |
-| **Creating** | Ownership, Planning | Design/Editing, Strategy |
+| **Remember** | Discover, Repetition | Cut-scenes, Tokens |
+| **Understand** | Tutorial, Q&A | Tutorial, Cascading info |
+| **Apply** | Action/Task, Simulation | Selecting/Collecting, Movement |
+| **Analyze** | Identify, Observation | Feedback, Realism |
+| **Evaluate** | Hypothesis, Reflect | Resource Management, Pareto Optimal |
+| **Create** | Ownership, Planning | Design/Editing, Strategy |
 
 </div>
 
@@ -169,19 +157,46 @@ The higher the cognitive level, the more your **game mechanics must demand decis
 
 </div>
 
+<div class="text-xs opacity-50 mt-2 italic">
+
+Verbs follow the revised taxonomy of Anderson & Krathwohl (2001), an update of Bloom (1956). Lim et al. (2013) use this revision in their Bloom alignment.
+
+</div>
+
 <!--
 Speaker notes — what each row means:
 
-- **Retention (lowest):** the player just needs to remember things. Cut-scenes deliver content; tokens reward recall. A flashcard app fits here.
-- **Understanding:** the player can explain. Tutorials and Q&A test this. "Cascading info" = revealing context piece by piece, like a guided onboarding.
-- **Applying:** the player uses what they learned in a known situation. Movement, sorting, simulating a procedure — all "apply" mechanics.
-- **Analysing:** the player breaks something down. Identifying a phishing email by its parts, observing patterns. Realism here means the game gives enough texture to analyze.
-- **Evaluating:** the player judges trade-offs. Resource management forces "is X worth more than Y here?" Pareto-optimal puzzles have multiple valid solutions.
-- **Creating (highest):** the player makes something new. Design/editing tools (level editors, strategy planning). Minecraft-style.
+- **Remember (lowest):** the player just needs to recall things. Cut-scenes deliver content; tokens reward recall. A flashcard app fits here.
+- **Understand:** the player can explain. Tutorials and Q&A test this. "Cascading info" = revealing context piece by piece, like a guided onboarding.
+- **Apply:** the player uses what they learned in a known situation. Movement, sorting, simulating a procedure — all "apply" mechanics.
+- **Analyze:** the player breaks something down. Identifying a phishing email by its parts, observing patterns. Realism here means the game gives enough texture to analyze.
+- **Evaluate:** the player judges trade-offs. Resource management forces "is X worth more than Y here?" Pareto-optimal puzzles have multiple valid solutions.
+- **Create (highest):** the player makes something new. Design/editing tools (level editors, strategy planning). Minecraft-style.
 
-Quick example to climb Bloom: "Capture/Eliminate" alone trains *Applying* (point and shoot). The same mechanic embedded in *Resource Management with consequences* (each shot costs ammo, ammo is scarce, enemies vary) climbs to *Evaluating*.
+Quick example to climb Bloom: "Capture/Eliminate" alone trains *Apply* (point and shoot). The same mechanic embedded in *Resource Management with consequences* (each shot costs ammo, ammo is scarce, enemies vary) climbs to *Evaluate*.
 
-Push students: "What's the highest Bloom level your game realistically demands?" Most novice serious games stop at Understanding/Applying. That's fine for a prototype, but be honest about it.
+Push students: "What's the highest Bloom level your game realistically demands?" Most novice serious games stop at Understand/Apply. That's fine for a prototype, but be honest about it.
+
+═══════════════════════════════════════════════
+CONTEXT ON BLOOM (in case anyone asks):
+
+**Origin.** Project started in 1948 at an APA convention in Boston. Benjamin Bloom chaired a committee of "college examiners" who needed a common vocabulary for writing learning objectives — the post-WWII G.I. Bill had flooded US universities with veterans, and examiners across institutions were drowning in inconsistent assessment criteria. Five years of conferences (1949–1953) produced the 1956 publication.
+
+**Authors.** Despite the name, it was a committee: Bloom (editor), Englehart, Furst, Hill, Krathwohl. The book is *Taxonomy of Educational Objectives: The Classification of Educational Goals — Handbook I: Cognitive Domain* (David McKay, NY, 1956). Out of print in the original edition; no free official PDF.
+
+**Three domains.** Bloom proposed cognitive (knowledge), affective (emotion), psychomotor (action). Handbook I (1956) covered cognitive; Handbook II (1964) covered affective; the psychomotor handbook was never written by the original committee.
+
+**Cognitive levels (1956 original):** Knowledge → Comprehension → Application → Analysis → Synthesis → Evaluation. Hypothesized as cumulative: you can't analyze without applying, can't apply without comprehending, etc.
+
+**The 2001 revision (Anderson & Krathwohl).** Three changes: (1) nouns became action verbs (Knowledge → Remember, Comprehension → Understand, etc.); (2) Synthesis was renamed Create and moved to the top, swapping with Evaluation; (3) added a second dimension — types of knowledge (factual, conceptual, procedural, metacognitive). This is the version used in syllabi today and the version on this slide.
+
+**Three big contributions.** (1) *Three domains* — before Bloom, "learning" was a monolith; he split it into cognitive/affective/psychomotor. (2) *Hierarchical levels* — the famous pyramid. (3) *Shared verb vocabulary* — every modern syllabus that says "the student will be able to *analyze* X" is unknowingly speaking Bloom.
+
+**Why Lim et al. anchor LM-GM in Bloom.** Bloom is the shared vocabulary every educator already speaks. If they had used Vygotsky or Sweller, they would have had to teach the theory first. Bloom lets them anchor in something familiar.
+
+**Common critiques.** The hierarchy isn't strictly cumulative — empirical work shows levels overlap and skip more than the pyramid suggests. Bloom is *descriptive* (classifies what you want students to do), not *explanatory* (doesn't say *how* learning happens; for that, Piaget, Vygotsky, Bruner, or Sweller's cognitive load theory). Also assumes an individual learner, not a situated one — critiques from social constructivism apply.
+
+**Accessible reading if anyone wants to dig in.** Krathwohl (2002), *A Revision of Bloom's Taxonomy: An Overview*, in *Theory into Practice* 41(4) — short, free in many libraries. The full 2001 book (Anderson & Krathwohl) is in any university library.
 -->
 
 ---
@@ -271,14 +286,14 @@ flowchart TB
     R[Q & A]
     S[Pareto Optimal]
   end
-  A --> X
-  B --> X
-  C --> X
-  D --> X
-  X --> P
-  X --> Q
-  X --> R
-  X --> S
+  A ==> X
+  B ==> X
+  C ==> X
+  D ==> X
+  X ==> P
+  X ==> Q
+  X ==> R
+  X ==> S
 ```
 
 </div>
@@ -297,6 +312,12 @@ flowchart TB
 <div class="text-xs opacity-75 mt-4">
 
 The replay-from-the-other-side mechanic turns a quiz on ethics into a serious game on *moral reasoning*.
+
+</div>
+
+<div class="text-xs opacity-50 mt-2 italic">
+
+LM-GM mapping by us, applying the framework of Lim et al. (2013) — not from the original paper.
 
 </div>
 
@@ -367,14 +388,14 @@ flowchart TB
     R[Q & A]
     S[Levels]
   end
-  A --> X
-  B --> X
-  C --> X
-  D --> X
-  X --> P
-  X --> Q
-  X --> R
-  X --> S
+  A ==> X
+  B ==> X
+  C ==> X
+  D ==> X
+  X ==> P
+  X ==> Q
+  X ==> R
+  X ==> S
 ```
 
 </div>
@@ -393,6 +414,12 @@ flowchart TB
 <div class="text-xs opacity-75 mt-4">
 
 Remove the SGM and the game becomes Mario-Bros (no learning); remove the platforming and it becomes a quiz (no fun).
+
+</div>
+
+<div class="text-xs opacity-50 mt-2 italic">
+
+LM-GM mapping by us, applying the framework of Lim et al. (2013) — not from the original paper.
 
 </div>
 
