@@ -66,8 +66,6 @@ layout: center
 ### Path B — The Researcher
 **Deepen the theoretical proposal.** No prototype — but the academic rigor goes up: stronger framework, more sources, sharper hypotheses.
 
-*Both paths can reach top grades. They are evaluated against different rubrics, not against each other.*
-
 ---
 layout: section
 ---
@@ -113,7 +111,7 @@ layout: default
 
 <div class="text-xs opacity-75 text-center mt-4">
 
-A good Serious Game has **few, deliberate links**. Too many = noise; none = disconnected from learning.
+Too many links = noise; none = disconnected from learning.
 
 </div>
 
@@ -237,8 +235,6 @@ Both tools are **free, open source, and exist to lower the technical barrier** s
 * **[GDevelop](https://gdevelop.io/) — low-code, action.**
   Visual event system (Conditions → Actions). Best for **spatial logic, resource management, time pressure, simulators** — anywhere the LM is *Action / Task / Analyse*.
 
-> *Friendly does not mean limited.* Both have published, peer-reviewed serious games behind them. The next slides show one of each.
-
 ---
 layout: section
 ---
@@ -317,7 +313,7 @@ The replay-from-the-other-side mechanic turns a quiz on ethics into a serious ga
 
 <div class="text-xs opacity-50 mt-2 italic">
 
-LM-GM mapping by us, applying the framework of Lim et al. (2013) — not from the original paper.
+LM‑GM mapping built by applying the Lim et al. (2013) framework — not reproduced from the original paper.
 
 </div>
 
@@ -419,7 +415,7 @@ Remove the SGM and the game becomes Mario-Bros (no learning); remove the platfor
 
 <div class="text-xs opacity-50 mt-2 italic">
 
-LM-GM mapping by us, applying the framework of Lim et al. (2013) — not from the original paper.
+LM‑GM mapping built by applying the Lim et al. (2013) framework — not reproduced from the original paper.
 
 </div>
 
@@ -433,7 +429,7 @@ layout: center
 
 > **Control your scope.**
 >
-> A 3-minute functional prototype that measures your variables is infinitely better than an unfinished epic.
+> A functional, evaluable prototype is infinitely better than an incomplete, over‑designed game.
 
 ---
 layout: section
@@ -455,21 +451,17 @@ Choosing **not to build** does **not** mean less work. It means a different kind
 * **Sharpened hypothesis & operationalization:** define variables, measurable constructs, and a credible evaluation design — even if not executed.
 * **Gap analysis with evidence:** show *why* the literature leaves your problem open, not just *that* it does.
 
-*Path B is judged as a research proposal, not as a missing prototype.*
-
 ---
 layout: center
 ---
 
 # Stage 3: Closing the Loop
 
-Whatever path you take, Stage 3 is the same in spirit:
+Whatever path you take, Stage 3 is essentially the same:
 
-* **Academic-style report** of your work.
-* **Peer review** of other groups' submissions.
-* **Final synthesis** integrating your reviewers' feedback.
-
-*Detailed format and rubric will be released separately.*
+* **Academic-style report**
+* **Project presentation**
+* **Peer review**
 
 ---
 layout: center
@@ -497,7 +489,6 @@ layout: center
 **Tools (free & open source)**
 * [Twine](https://twinery.org/) — narrative, no-code, exports HTML.
 * [GDevelop](https://gdevelop.io/) — 2D action, low-code event system, exports web/desktop/mobile.
-* [GDevelop wiki](https://wiki.gdevelop.io/) — editor walkthrough and event reference.
 
 ---
 layout: center
@@ -506,4 +497,6 @@ class: text-center
 
 # Questions?
 
-Bring your Stage 1 dossier and your draft LM-GM table to the next session.
+## Thank you 🙏
+
+> Bring your Stage 1 dossier and your draft LM-GM table to the next session.
