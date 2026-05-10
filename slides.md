@@ -26,12 +26,11 @@ layout: center
 # Outline
 
 1. **Where we stand** — Stage 1 milestone, two paths ahead.
-2. **The LM-GM framework** — how to bridge pedagogy and gameplay.
-3. **Bloom alignment** — calibrating cognitive depth.
-4. **Two tools for proof-of-concept** — Twine and GDevelop.
-5. **Worked examples** — *Academical* (Twine) and *Adventure with Relational Algebra* (GDevelop).
-6. **Path B** — the theoretical track.
-7. **Stage 3** — peer review and the academic report.
+2. **The LM-GM framework** — how to bridge pedagogy and gameplay, with cognitive depth.
+3. **Two tools for proof-of-concept** — Twine and GDevelop.
+4. **Worked examples** — *Academical* (Twine) and *Adventure with Relational Algebra* (GDevelop).
+5. **Path B** — the theoretical track.
+6. **Stage 3** — peer review and the academic report.
 
 ---
 layout: section
@@ -80,13 +79,22 @@ layout: center
 # The LM-GM Framework
 ### Learning Mechanics ↔ Game Mechanics
 
-A descriptive model proposed by **Lim et al. (2013)** to bridge **pedagogical intent** and **playable actions** inside a Serious Game.
+A descriptive model formalized by **Arnab et al. ([2015](https://doi.org/10.1111/bjet.12113))** — building on Lim et al. (2013) — to bridge **pedagogical intent** and **playable actions**.
 
-* **Learning Mechanics (LM):** what the player must learn — *Identify, Hypothesize, Analyse, Reflect*.
-* **Game Mechanics (GM):** what the player actually does — *Collect, Capture/Eliminate, Manage Resources*.
-* **Serious Game Mechanic (SGM):** the design decision that turns a learning goal into a playable action — the bridge between the two.
+* **Learning Mechanics (LM):** pedagogical practices the design enacts — *Identify, Hypothesize, Reflect, Repetition, Feedback*. Theory-agnostic; can be classified by depth (Bloom / Anderson) or domain (cognitive / affective). Catalog of LMs in [Arnab et al. (2015)](https://doi.org/10.1111/bjet.12113).
+* **Game Mechanics (GM):** methods the player invokes to interact with the game — *Collect, Capture/Eliminate, Manage Resources*. Catalog of GMs in [Arnab et al. (2015)](https://doi.org/10.1111/bjet.12113), distilled from [Järvinen (2008)](http://urn.fi/urn:isbn:978-951-44-7252-7), [Sicart (2008)](https://gamestudies.org/0802/articles/sicart), [Bellotti et al. (2009)](https://doi.org/10.1145/1541895.1541903).
+* **Serious Game Mechanic (SGM):** the **domain-specific** design decision that links an LM to a GM. This is where the designer's craft lives.
 
-> *The pedagogical goal (LM) must map onto a play action (GM) that makes the learning invisible yet effective.*
+> *Two theory-agnostic vocabularies, joined by a domain-specific bridge.*
+
+<!--
+Talking points:
+- Three groups, not two. The center (SGM) is the most important because it's where the designer's choice becomes visible — and it's domain-specific, so no catalog exists for it.
+- LM and GM catalogs are theory-agnostic: a team can use the same LM "Identify" whether they ground it in Bloom, Anderson, or Bloom's affective domain. Same for GMs across Järvinen/Sicart/Bellotti.
+- This is what makes LM-GM a meta-framework: it tells you *how to map*, not *what to map*. The "what" comes from your Stage 1 problem.
+- Push: ask each group to name one candidate LM and one candidate GM from their problem. The SGM is what they have to *invent* during Stage 2.
+-->
+
 
 ---
 layout: default
@@ -96,105 +104,62 @@ layout: default
 
 <div class="text-sm opacity-80 -mt-2">Pedagogy on the left, gameplay on the right — the designer's job is to draw the links.</div>
 
-<div class="text-sm mt-4">
+<div class="text-xs opacity-70 mt-2 italic">
 
-| Learning Mechanic *(what the player must learn)* | → Linked to → | Game Mechanic *(what the player does)* |
-|---|:---:|---|
-| Identify | spot phishing | Selecting / Collecting |
-| Hypothesis | test a plan | Strategy / Planning |
-| Action / Task | act under stress | Capture / Eliminate, Time pressure |
-| Reflect | review progress | Levels |
-| Motivation | earn status | Rewards / Status |
-| Feedback | (direct) | Levels, Feedback |
+Didactic, cross-domain example (cyber, software, project management). Levels: [Anderson & Krathwohl 2001](https://people.ucsc.edu/~ktellez/blooms_taxonomy.pdf); affective = Bloom 1964; transversal = every level. Full catalog: [Arnab et al. (2015)](https://doi.org/10.1111/bjet.12113), Figs 2–4.
 
 </div>
 
-<div class="text-xs opacity-75 text-center mt-4">
+<style>
+.lmgm-table table th:nth-child(2),
+.lmgm-table table td:nth-child(2) {
+  opacity: 0.55;
+  font-style: italic;
+}
+</style>
 
-Too many links = noise; none = disconnected from learning.
+<div class="lmgm-table text-xs mt-3">
+
+| Learning Mechanic | Cognitive level | → linked to → | Game Mechanic |
+|---|:---:|:---:|---|
+| Discover | Remember | recall key terms | Cut-scenes, Tokens |
+| Identify | Understand | spot phishing | Selecting / Collecting |
+| Action / Task | Apply | act under stress | Capture / Eliminate, Time pressure |
+| Observation | Analyze | diagnose root cause | Feedback, Realism |
+| Hypothesis | Evaluate | test a plan | Resource Management |
+| Planning | Create | design a strategy | Design / Editing, Strategy |
+| Motivation | (affective) | earn status | Rewards / Status |
+| Feedback | (transversal) | reinforce learning | Levels, Feedback |
 
 </div>
 
 <!--
 Talking points:
-- LM column comes from pedagogical theory: behaviorism, constructivism, cognitivism. The list in this slide is a non-exhaustive subset of what Lim et al. (2013) propose.
-- GM column comes from game design literature: Järvinen, Sicart, Bellotti.
-- The middle column is what Lim et al. call a Serious Game Mechanic (SGM): the design decision that turns a learning goal into a play action. Each row is a hypothesis: "this game action will make this learning happen."
-- Encourage students to draw their own LM-GM table for their Stage 1 problem before they pick a tool.
-- Same idea Lim et al. illustrate with arrows in their Figure 2 — we use a table here for clarity in a slide format.
--->
-
----
-
-# Bloom-aligned mapping (condensed)
-
-Aligning **what the player thinks** with **what they do** in the game.
-
-<div class="text-xs opacity-70 -mt-2 italic">
-
-The same LM ↔ GM pairs from the previous slide — now grouped by cognitive depth.
-
-</div>
-
-<div class="text-sm">
-
-| Thinking skill | Sample LM | Sample GM |
-|---|---|---|
-| **Remember** | Discover, Repetition | Cut-scenes, Tokens |
-| **Understand** | Tutorial, Q&A | Tutorial, Cascading info |
-| **Apply** | Action/Task, Simulation | Selecting/Collecting, Movement |
-| **Analyze** | Identify, Observation | Feedback, Realism |
-| **Evaluate** | Hypothesis, Reflect | Resource Management, Pareto Optimal |
-| **Create** | Ownership, Planning | Design/Editing, Strategy |
-
-</div>
-
-<div class="text-xs opacity-75 mt-2">
-
-The higher the cognitive level, the more your **game mechanics must demand decisions, not reflexes**.
-
-</div>
-
-<div class="text-xs opacity-50 mt-2 italic">
-
-Verbs follow the revised taxonomy of Anderson & Krathwohl (2001), an update of Bloom (1956). Lim et al. (2013) use this revision in their Bloom alignment.
-
-</div>
-
-<!--
-Speaker notes — what each row means:
-
-- **Remember (lowest):** the player just needs to recall things. Cut-scenes deliver content; tokens reward recall. A flashcard app fits here.
-- **Understand:** the player can explain. Tutorials and Q&A test this. "Cascading info" = revealing context piece by piece, like a guided onboarding.
-- **Apply:** the player uses what they learned in a known situation. Movement, sorting, simulating a procedure — all "apply" mechanics.
-- **Analyze:** the player breaks something down. Identifying a phishing email by its parts, observing patterns. Realism here means the game gives enough texture to analyze.
-- **Evaluate:** the player judges trade-offs. Resource management forces "is X worth more than Y here?" Pareto-optimal puzzles have multiple valid solutions.
-- **Create (highest):** the player makes something new. Design/editing tools (level editors, strategy planning). Minecraft-style.
-
-Quick example to climb Bloom: "Capture/Eliminate" alone trains *Apply* (point and shoot). The same mechanic embedded in *Resource Management with consequences* (each shot costs ammo, ammo is scarce, enemies vary) climbs to *Evaluate*.
-
-Push students: "What's the highest Bloom level your game realistically demands?" Most novice serious games stop at Understand/Apply. That's fine for a prototype, but be honest about it.
+- Each row is one design hypothesis: this LM, at this cognitive level, will be carried by this GM. The middle column is the Serious Game Mechanic (SGM) — the designer's bridge.
+- The *Cognitive level* column is dimmed because it is a **cross-theory annotation** — it follows Anderson & Krathwohl (2001), not the LM-GM framework itself. Worth saying out loud so students don't conflate the two.
+- Cognitive level matters because it constrains GM choice. A "Remember" LM is fine with passive GMs (Cut-scenes); a "Create" LM demands active, open-ended GMs (Design/Editing). Higher levels demand decisions, not reflexes.
+- Why two rows are bracketed: Motivation and Feedback don't fit Bloom's cognitive pyramid. Motivation belongs to Bloom's **affective domain** (Krathwohl, Bloom & Masia 1964) — it's about engagement and attitudes, not knowing. Feedback is **transversal** — every cognitive level needs feedback to close the learning loop. Worth saying out loud: "not every LM is cognitive; some are affective or structural."
+- LM column comes from pedagogical theory: behaviorism, constructivism, cognitivism. Full catalog in Arnab et al. (2015).
+- GM column comes from game design literature: Järvinen, Sicart, Bellotti. Full catalog in Arnab et al. (2015).
+- A good Serious Game has few, deliberate links — too many = noise; none = disconnected from learning.
+- Ask the groups: which row most resembles their core LM? If their LM doesn't fit any of these, that's a sign they need to refine their Stage 1 problem statement.
 
 ═══════════════════════════════════════════════
 CONTEXT ON BLOOM (in case anyone asks):
 
 **Origin.** Project started in 1948 at an APA convention in Boston. Benjamin Bloom chaired a committee of "college examiners" who needed a common vocabulary for writing learning objectives — the post-WWII G.I. Bill had flooded US universities with veterans, and examiners across institutions were drowning in inconsistent assessment criteria. Five years of conferences (1949–1953) produced the 1956 publication.
 
-**Authors.** Despite the name, it was a committee: Bloom (editor), Englehart, Furst, Hill, Krathwohl. The book is *Taxonomy of Educational Objectives: The Classification of Educational Goals — Handbook I: Cognitive Domain* (David McKay, NY, 1956). Out of print in the original edition; no free official PDF.
+**Authors.** Despite the name, it was a committee: Bloom (editor), Englehart, Furst, Hill, Krathwohl. The book is *Taxonomy of Educational Objectives: The Classification of Educational Goals — Handbook I: Cognitive Domain* (David McKay, NY, 1956).
 
-**Three domains.** Bloom proposed cognitive (knowledge), affective (emotion), psychomotor (action). Handbook I (1956) covered cognitive; Handbook II (1964) covered affective; the psychomotor handbook was never written by the original committee.
+**Three domains.** Bloom proposed cognitive (knowledge), affective (emotion), psychomotor (action). Handbook I (1956) covered cognitive; Handbook II (1964, Krathwohl as lead) covered affective; the psychomotor handbook was never written by the original committee.
 
-**Cognitive levels (1956 original):** Knowledge → Comprehension → Application → Analysis → Synthesis → Evaluation. Hypothesized as cumulative: you can't analyze without applying, can't apply without comprehending, etc.
+**Cognitive levels (1956 original):** Knowledge → Comprehension → Application → Analysis → Synthesis → Evaluation. Hypothesized as cumulative.
 
-**The 2001 revision (Anderson & Krathwohl).** Three changes: (1) nouns became action verbs (Knowledge → Remember, Comprehension → Understand, etc.); (2) Synthesis was renamed Create and moved to the top, swapping with Evaluation; (3) added a second dimension — types of knowledge (factual, conceptual, procedural, metacognitive). This is the version used in syllabi today and the version on this slide.
+**The 2001 revision (Anderson & Krathwohl).** Three changes: (1) nouns became action verbs (Knowledge → Remember, etc.); (2) Synthesis was renamed Create and moved to the top, swapping with Evaluation; (3) added a second dimension — types of knowledge (factual, conceptual, procedural, metacognitive). This is the version used in syllabi today and on this slide.
 
-**Three big contributions.** (1) *Three domains* — before Bloom, "learning" was a monolith; he split it into cognitive/affective/psychomotor. (2) *Hierarchical levels* — the famous pyramid. (3) *Shared verb vocabulary* — every modern syllabus that says "the student will be able to *analyze* X" is unknowingly speaking Bloom.
-
-**Why Lim et al. anchor LM-GM in Bloom.** Bloom is the shared vocabulary every educator already speaks. If they had used Vygotsky or Sweller, they would have had to teach the theory first. Bloom lets them anchor in something familiar.
+**Why the LM-GM authors anchor their model in Bloom.** Bloom is the shared vocabulary every educator already speaks. Had they used Vygotsky or Sweller, they would have had to teach the theory first.
 
 **Common critiques.** The hierarchy isn't strictly cumulative — empirical work shows levels overlap and skip more than the pyramid suggests. Bloom is *descriptive* (classifies what you want students to do), not *explanatory* (doesn't say *how* learning happens; for that, Piaget, Vygotsky, Bruner, or Sweller's cognitive load theory). Also assumes an individual learner, not a situated one — critiques from social constructivism apply.
-
-**Accessible reading if anyone wants to dig in.** Krathwohl (2002), *A Revision of Bloom's Taxonomy: An Overview*, in *Theory into Practice* 41(4) — short, free in many libraries. The full 2001 book (Anderson & Krathwohl) is in any university library.
 -->
 
 ---
@@ -214,6 +179,15 @@ Before coding anything, your team must answer these 3 questions:
 3. **Is there "noise"?**
    *If a game element neither entertains nor teaches, cut it out immediately.*
 
+<!--
+Talking points:
+- These three questions are the LM-GM test in plain language. If a group can't answer them, they're not ready to code.
+- "Core loop" is the moment-to-moment activity, not the meta-structure. Re-Mission's core loop is shooting cancer cells; the meta-structure is the patient narrative.
+- Question 2 is the heart of the framework: every game element must be traceable to either an LM (it teaches) or an entertainment-only purpose (it engages). Decoration that does neither is dead weight.
+- Question 3 is hard because students fall in love with their ideas. Force them to justify each mechanic in writing.
+-->
+
+
 ---
 layout: section
 ---
@@ -227,20 +201,32 @@ layout: center
 
 # Twine and GDevelop, side by side
 
-Both tools are **free, open source, and exist to lower the technical barrier** so your team can ship a 3-minute playable prototype. They are not interchangeable: each fits a different kind of *core loop*.
+Both are **free, open source**, and designed to lower the technical barrier so your team can ship a playable prototype quickly. They are not interchangeable: each fits a different kind of *core loop*.
 
 * **[Twine](https://twinery.org/) — no-code, narrative.**
-  Write text, add links, get an HTML game. Best for **decision-making, ethics, clinical reasoning, branching scenarios** — anywhere the LM is *Choose / Reflect / Identify*.
+  Build *passages* of text linked by player choices; exports HTML directly. Best for **decision-making, ethics, clinical reasoning, branching scenarios** — anywhere the LM is *Choose / Reflect / Identify*.
 
 * **[GDevelop](https://gdevelop.io/) — low-code, action.**
-  Visual event system (Conditions → Actions). Best for **spatial logic, resource management, time pressure, simulators** — anywhere the LM is *Action / Task / Analyse*.
+  Build *events* as visual *Conditions → Actions* (e.g. *if player touches enemy, lose a life*); exports web/desktop/mobile. Best for **spatial logic, resource management, time pressure, simulators** — anywhere the LM is *Action / Task / Analyse*.
+
+> *Pick the tool whose primitive matches your core loop: passages for stories, events for actions.*
+
+<!--
+Talking points:
+- The primitive matters more than the tool. Twine's primitive is a *passage* (a text node with outgoing links); GDevelop's primitive is an *event* (a Condition→Action rule). Choose based on what your core loop actually does.
+- "No-code" vs "low-code" is real: Twine literally needs zero programming knowledge for a working prototype; GDevelop needs you to think procedurally even though there's no syntax.
+- Both export to web. Both are free, both are open source. There is no licensing risk for student work.
+- Discourage tool-shopping. Pick one in week 1 and commit. Switching tools mid-project burns time that should go into the LM-GM mapping and content.
+- If a group has a hybrid core loop (e.g. clinical reasoning with timed pressure), Twine wins because narrative dominates. If the core loop is action-driven with embedded text, GDevelop wins because text is easy to add but real-time logic isn't easy in Twine.
+-->
+
 
 ---
 layout: section
 ---
 
 # Worked Example 1
-A real Twine serious game, analyzed with LM-GM.
+Applying the LM-GM framework to a real Twine serious game.
 
 ---
 layout: center
@@ -256,6 +242,15 @@ A choice-based interactive narrative built in **Twine** to teach **Responsible C
 * **Format:** 9 scenarios; each centers on a dialogue between two stakeholders. Player chooses lines; reaches one of several endings; replays from the *other* perspective.
 
 > 🎮 Project page & paper: [altgameslab.soe.ucsc.edu/academical](https://altgameslab.soe.ucsc.edu/academical/)
+
+<!--
+Talking points:
+- Pick this case for groups doing ethics, clinical reasoning, or any domain where the *deliberation itself* is the learning. Examples in this cohort: TDAH (ethical consent for adaptive systems), Neurociencia (clinical diagnosis), Cyber (decision-making under social engineering).
+- The "Exceptional Paper Award" at FDG is the field's most respected venue for design-research crossover. Worth flagging to legitimize Twine as a serious academic tool.
+- The original-vs-revisit mechanic is the cleanest example of role-taking I've seen in literature. It's the SGM that turns this from a quiz into something else.
+- Controlled study: this is rare in serious games. Most papers describe a game and stop. Academical actually measured against a baseline (web-based RCR materials) and won.
+-->
+
 
 ---
 layout: two-cols
@@ -313,34 +308,26 @@ The replay-from-the-other-side mechanic turns a quiz on ethics into a serious ga
 
 <div class="text-xs opacity-50 mt-2 italic">
 
-LM‑GM mapping built by applying the Lim et al. (2013) framework — not reproduced from the original paper.
+LM‑GM mapping built by applying the Arnab et al. (2015) framework — not reproduced from the original paper.
 
 </div>
 
 </div>
+
+<!--
+Talking points:
+- The mapping here is ours, not from the original paper. Melcer et al. describe Academical in their own terms; we re-cast it through LM-GM as an exercise.
+- Notice the SGM "Choose dialogue from two perspectives" — that's the unit of design innovation. Without the replay-from-the-other-side mechanic, this is just a choice-based quiz.
+- *Pareto Optimal* as a GM is unusual: most games have a single best ending. Here, no ending dominates — each perspective reveals trade-offs invisible from the other side. That's what teaches moral reasoning.
+- This is the exercise students should do for their own game: take their LM list, take their GM list, identify the SGM that bridges them, and write a row in the table for each one.
+-->
 
 ---
 layout: section
 ---
 
 # Worked Example 2
-A real GDevelop serious game, analyzed with LM-GM.
-
----
-layout: center
----
-
-# What makes GDevelop different
-
-GDevelop is **event-based**: you write the game logic as a list of *Conditions → Actions*, no syntax.
-
-* **Conditions** ask the world: *"Is the player touching an enemy?"*, *"Was the spacebar pressed?"*, *"Is the score ≥ 100?"*
-* **Actions** change the world: *"Subtract 1 life"*, *"Play sound"*, *"Go to scene 'GameOver'"*.
-* You drag, drop, and pick from menus. The same engine exports to web (HTML5), desktop, and mobile.
-
-> The cognitive load lands on **game design**, not on syntax — which is exactly what you need for a 3-minute prototype.
-
-*See the [GDevelop wiki](https://wiki.gdevelop.io/) for a tour of the editor.*
+Applying the LM-GM framework to a real GDevelop serious game.
 
 ---
 layout: center
@@ -358,6 +345,14 @@ A platformer serious game built in **GDevelop** as a proof of concept of a model
 > 🎮 Play it live: [gd.games/pedrosilva/algebra-relacional-bd](https://gd.games/pedrosilva/algebra-relacional-bd)
 
 *The paper explicitly cites the LM-GM framework (Lim et al., 2013) as one of its conceptual references.*
+
+<!--
+Talking points:
+- Pick this case for groups with technical or procedural content: Refactor Quest (refactoring tactics), Sprint Flow Manager (Scrum events), Quantum Tic-Tac-Toe (move semantics). The platformer-as-content-delivery genre maps cleanly to any topic where there are discrete correct answers.
+- The paper's contribution is the *semi-automatic generation model*, not the game itself. The game is the proof of concept. This is a useful pattern: don't sell the game, sell the methodology that produced it.
+- 75 students is a respectable sample for serious-games research. Many published SG papers evaluate with N<30.
+- The "wrong answer costs a life" mechanic is classic *negative feedback* — it works because it preserves flow. Compare with NeurEscape, where wrong answers will need a different feedback strategy that doesn't break the escape-room tension.
+-->
 
 ---
 layout: two-cols
@@ -415,11 +410,19 @@ Remove the SGM and the game becomes Mario-Bros (no learning); remove the platfor
 
 <div class="text-xs opacity-50 mt-2 italic">
 
-LM‑GM mapping built by applying the Lim et al. (2013) framework — not reproduced from the original paper.
+LM‑GM mapping built by applying the Arnab et al. (2015) framework — not reproduced from the original paper.
 
 </div>
 
 </div>
+
+<!--
+Talking points:
+- The SGM here ("Answer correctly to advance") is *gate-based* — discrete checkpoints. Compare with Academical's SGM, which is *continuous role-taking*. Two completely different ways to bridge LM-GM, both valid.
+- The platforming itself doesn't teach relational algebra. The platforming exists to make the quiz tolerable. This is honest design: the game part is for engagement, the gate part is for content. The SGM holds them together.
+- A student might ask: "couldn't this be a Kahoot quiz?" The answer: yes, but the platformer adds intrinsic motivation that Kahoot's extrinsic competition can't replicate. The lit (Wouters, Plass, others) shows this matters for retention over time.
+- Encourage students to think: which SGM pattern fits their game? Gate-based, role-taking, both, or something else?
+-->
 
 ---
 layout: center
@@ -467,24 +470,37 @@ Whatever path you take, Stage 3 is essentially the same:
 layout: center
 ---
 
-# References — Frameworks & Worked Examples
+# References — LM-GM & Theoretical Anchors
 
-**Core framework**
-* Lim, T., Carvalho, M. B., Bellotti, F., Arnab, S., de Freitas, S., Louchart, S., Suttie, N., Berta, R., & De Gloria, A. (2013). *The LM-GM Framework for Serious Games Analysis*. ECGBL.
-* Anderson, L. W., & Krathwohl, D. (2001). *A Taxonomy for Learning, Teaching and Assessing: A Revision of Bloom's Taxonomy*. Longman.
+<div class="text-sm">
 
-**Worked examples**
-* Melcer, E. F., Grasse, K., Ryan, J., Junius, N., Kreminski, M., Squinkifer, D., Hill, B., & Wardrip-Fruin, N. (2020). *Getting Academical: A Choice-Based Interactive Storytelling Game for Teaching Responsible Conduct of Research*. **FDG 2020** (ACM). 🎮 [altgameslab.soe.ucsc.edu/academical](https://altgameslab.soe.ucsc.edu/academical/)
-* Silva-Vásquez, P. O., Rosales-Morales, V. Y., Benítez-Guerrero, E., Alor-Hernández, G., Mezura-Godoy, C., & Montané-Jiménez, L. G. (2023). *Model for Semi-Automatic Serious Games Generation*. **Applied Sciences, 13**(8), 5158. [doi.org/10.3390/app13085158](https://doi.org/10.3390/app13085158) · 🎮 [gd.games/pedrosilva/algebra-relacional-bd](https://gd.games/pedrosilva/algebra-relacional-bd)
+**Core framework (LM-GM)**
+* Arnab, S., Lim, T., Carvalho, M. B., Bellotti, F., de Freitas, S., Louchart, S., Suttie, N., Berta, R., & De Gloria, A. (2015). *Mapping learning and game mechanics for serious games analysis*. **British Journal of Educational Technology**, 46(2), 391–411. [doi.org/10.1111/bjet.12113](https://doi.org/10.1111/bjet.12113)
+* Lim, T., et al. (2013). *The LM-GM Framework for Serious Games Analysis*. ECGBL. [ResearchGate](https://www.researchgate.net/publication/259296509_The_LM-GM_Framework_for_Serious_Games_Analysis)
+
+**Cognitive depth (LM side)**
+* Anderson, L. W., & Krathwohl, D. R. (2001). *A Taxonomy for Learning, Teaching, and Assessing*. Longman. [Krathwohl (2002) overview](https://people.ucsc.edu/~ktellez/blooms_taxonomy.pdf)
+* Bloom, B. S. (1956). *Taxonomy of Educational Objectives, Handbook I: Cognitive Domain*. David McKay.
+
+**Game Mechanics (GM side)**
+* Järvinen, A. (2008). *Games without Frontiers*. PhD thesis, U. of Tampere. [PDF](http://urn.fi/urn:isbn:978-951-44-7252-7)
+* Sicart, M. (2008). *Defining Game Mechanics*. **Game Studies**, 8(2). [Open access](https://gamestudies.org/0802/articles/sicart)
+* Bellotti, F., Berta, R., De Gloria, A., & Primavera, L. (2009). *Enhancing the educational value of video games*. **ACM Computers in Entertainment**, 7(2), Article 23. [doi.org/10.1145/1541895.1541903](https://doi.org/10.1145/1541895.1541903)
+
+</div>
 
 ---
 layout: center
 ---
 
-# References — Inclusive Design & Tools
+# References — Worked Examples, Inclusive Design & Tools
+
+**Worked examples**
+* Melcer, E. F., et al. (2020). *Getting Academical: A Choice-Based Interactive Storytelling Game for Teaching Responsible Conduct of Research*. **FDG 2020** (ACM). 🎮 [altgameslab.soe.ucsc.edu/academical](https://altgameslab.soe.ucsc.edu/academical/)
+* Silva-Vásquez, P. O., et al. (2023). *Model for Semi-Automatic Serious Games Generation*. **Applied Sciences**, 13(8), 5158. [doi.org/10.3390/app13085158](https://doi.org/10.3390/app13085158) · 🎮 [gd.games/pedrosilva/algebra-relacional-bd](https://gd.games/pedrosilva/algebra-relacional-bd)
 
 **Inclusive design**
-* Cano, S., et al. *The TEGA Toolkit* — [Springer chapter](https://link.springer.com/chapter/10.1007/978-3-030-77599-5_37). Cognitive accessibility, representation, and flexibility in serious games.
+* Cano, S., et al. *The TEGA Toolkit* — [Springer chapter](https://link.springer.com/chapter/10.1007/978-3-030-77599-5_37). Cognitive accessibility, representation, flexibility.
 
 **Tools (free & open source)**
 * [Twine](https://twinery.org/) — narrative, no-code, exports HTML.
