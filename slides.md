@@ -59,7 +59,7 @@ layout: center
 layout: center
 ---
 
-# The Fork in the Road (Stage 2)
+# The Fork in the Road (Stage 2 & 3)
 
 > Each group must commit to one of two distinct paths.
 
