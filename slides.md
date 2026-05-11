@@ -462,7 +462,7 @@ layout: center
 
 Whatever path you take, Stage 3 is essentially the same:
 
-* **Academic-style report**
+* **Academic-style [research report](https://journal.seriousgamessociety.org/index.php/IJSG/announcement/view/4)**
 * **Project presentation**
 * **Peer review**
 
