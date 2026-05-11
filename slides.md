@@ -34,7 +34,7 @@ layout: center
 3. **Two tools for proof-of-concept** — Twine and GDevelop.
 4. **Worked examples** — *Academical* (Twine) and *Adventure with Relational Algebra* (GDevelop).
 5. **Path B** — the theoretical track.
-6. **Stage 3** — peer review and the academic report.
+6. **Stage 4** — peer review and the academic report.
 
 ---
 layout: section
@@ -462,9 +462,9 @@ Choosing **not to build** does **not** mean less work. It means a different kind
 layout: center
 ---
 
-# Stage 3: Closing the Loop
+# Stage 4: Closing the Loop
 
-Whatever path you take, Stage 3 is essentially the same:
+Whatever path you take, Stage 4 is essentially the same:
 
 * **Academic-style [research report](https://journal.seriousgamessociety.org/index.php/IJSG/announcement/view/4)**
 * **Project presentation**
