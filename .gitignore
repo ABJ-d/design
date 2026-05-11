@@ -17,5 +17,3 @@ coverage/
 .eslintcache
 *.tsbuildinfo
 
-# temp
-*.pdf
