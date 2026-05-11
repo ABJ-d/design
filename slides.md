@@ -1,17 +1,21 @@
 ---
+# try also 'default' to start simple
 theme: seriph
-background: https://raw.githubusercontent.com/visualcomputing/p5.tree/main/p5.tree.png
-class: text-center
+# new background image
+# background: https://raw.githubusercontent.com/visualcomputing/p5.treegl/main/p5.treegl.png
+background: "p5.tree.png"
+# apply any unocss classes to the current slide
+class: 'text-center'
+# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-lineNumbers: true
+# some information about the slides, markdown enabled
 info: |
   ## DGBL: Design & Implementation
   Stage 2 keynote for the Serious Games course.
-drawings:
-  persist: false
 transition: slide-left
-title: DGBL - From Problem to Serious Game
+title: Problem & Context
 mdc: true
+hideInToc: true
 ---
 
 # DGBL: From Problem to Serious Game
