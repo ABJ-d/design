@@ -11,7 +11,7 @@ highlighter: shiki
 # some information about the slides, markdown enabled
 info: |
   ## DGBL: Design & Implementation
-  Stage 2 keynote for the Serious Games course.
+  Stage 2 & 3 keynote for the Serious Games course.
 transition: slide-left
 title: Problem & Context
 mdc: true
@@ -19,7 +19,7 @@ hideInToc: true
 ---
 
 # DGBL: From Problem to Serious Game
-## Stage 2: Design, Implement, or Iterate
+## Stage 2 & 3: Design & Implement, or Iterate
 
 A methodological guide for creating digital game-based learning experiences.
 
