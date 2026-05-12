@@ -95,10 +95,9 @@ A descriptive model formalized by **Arnab et al. ([2015](https://doi.org/10.1111
 Talking points:
 - Three groups, not two. The center (SGM) is the most important because it's where the designer's choice becomes visible — and it's domain-specific, so no catalog exists for it.
 - LM and GM catalogs are theory-agnostic: a team can use the same LM "Identify" whether they ground it in Bloom, Anderson, or Bloom's affective domain. Same for GMs across Järvinen/Sicart/Bellotti.
-- This is what makes LM-GM a meta-framework: it tells you *how to map*, not *what to map*. The "what" comes from your Stage 1 problem.
-- Push: ask each group to name one candidate LM and one candidate GM from their problem. The SGM is what they have to *invent* during Stage 2.
+- This is what makes LM-GM a meta-framework: it tells us *how to map*, not *what to map*. The "what" comes from Stage 1 problem & context.
+- Init design question: name one candidate LM and one candidate GM from our problem. The SGM is what they have to *invent* during Stage 2.
 -->
-
 
 ---
 layout: default
@@ -140,16 +139,16 @@ Didactic, cross-domain example (cyber, software, project management). Levels: [A
 <!--
 Talking points:
 - Each row is one design hypothesis: this LM, at this cognitive level, will be carried by this GM. The middle column is the Serious Game Mechanic (SGM) — the designer's bridge.
-- The *Cognitive level* column is dimmed because it is a **cross-theory annotation** — it follows Anderson & Krathwohl (2001), not the LM-GM framework itself. Worth saying out loud so students don't conflate the two.
+- The *Cognitive level* column is dimmed because it is a **cross-theory annotation** — it follows Anderson & Krathwohl (2001), not the LM-GM framework itself. Worth saying out loud so we don't conflate the two.
 - Cognitive level matters because it constrains GM choice. A "Remember" LM is fine with passive GMs (Cut-scenes); a "Create" LM demands active, open-ended GMs (Design/Editing). Higher levels demand decisions, not reflexes.
 - Why two rows are bracketed: Motivation and Feedback don't fit Bloom's cognitive pyramid. Motivation belongs to Bloom's **affective domain** (Krathwohl, Bloom & Masia 1964) — it's about engagement and attitudes, not knowing. Feedback is **transversal** — every cognitive level needs feedback to close the learning loop. Worth saying out loud: "not every LM is cognitive; some are affective or structural."
 - LM column comes from pedagogical theory: behaviorism, constructivism, cognitivism. Full catalog in Arnab et al. (2015).
 - GM column comes from game design literature: Järvinen, Sicart, Bellotti. Full catalog in Arnab et al. (2015).
 - A good Serious Game has few, deliberate links — too many = noise; none = disconnected from learning.
-- Ask the groups: which row most resembles their core LM? If their LM doesn't fit any of these, that's a sign they need to refine their Stage 1 problem statement.
+- Follow-up design question: which row most resembles our core LM? If our LM doesn't fit any of these, that's a sign we need to refine our Stage 1 problem statement.
 
 ═══════════════════════════════════════════════
-CONTEXT ON BLOOM (in case anyone asks):
+CONTEXT ON BLOOM (in case anyone of us asks):
 
 **Origin.** Project started in 1948 at an APA convention in Boston. Benjamin Bloom chaired a committee of "college examiners" who needed a common vocabulary for writing learning objectives — the post-WWII G.I. Bill had flooded US universities with veterans, and examiners across institutions were drowning in inconsistent assessment criteria. Five years of conferences (1949–1953) produced the 1956 publication.
 
@@ -163,7 +162,7 @@ CONTEXT ON BLOOM (in case anyone asks):
 
 **Why the LM-GM authors anchor their model in Bloom.** Bloom is the shared vocabulary every educator already speaks. Had they used Vygotsky or Sweller, they would have had to teach the theory first.
 
-**Common critiques.** The hierarchy isn't strictly cumulative — empirical work shows levels overlap and skip more than the pyramid suggests. Bloom is *descriptive* (classifies what you want students to do), not *explanatory* (doesn't say *how* learning happens; for that, Piaget, Vygotsky, Bruner, or Sweller's cognitive load theory). Also assumes an individual learner, not a situated one — critiques from social constructivism apply.
+**Common critiques.** The hierarchy isn't strictly cumulative — empirical work shows levels overlap and skip more than the pyramid suggests. Bloom is *descriptive* (classifies what we want students to do), not *explanatory* (doesn't say *how* learning happens; for that, Piaget, Vygotsky, Bruner, or Sweller's cognitive load theory). Also assumes an individual learner, not a situated one — critiques from social constructivism apply.
 -->
 
 ---
@@ -185,12 +184,11 @@ Before coding anything, your team must answer these 3 questions:
 
 <!--
 Talking points:
-- These three questions are the LM-GM test in plain language. If a group can't answer them, they're not ready to code.
+- These three questions are the LM-GM test in plain language. If we can't answer them, we're not ready to code.
 - "Core loop" is the moment-to-moment activity, not the meta-structure. Re-Mission's core loop is shooting cancer cells; the meta-structure is the patient narrative.
 - Question 2 is the heart of the framework: every game element must be traceable to either an LM (it teaches) or an entertainment-only purpose (it engages). Decoration that does neither is dead weight.
-- Question 3 is hard because students fall in love with their ideas. Force them to justify each mechanic in writing.
+- Question 3 is hard — we easily fall in love with our own ideas (a known bias called the [IKEA effect, Norton et al., 2012](https://en.wikipedia.org/wiki/IKEA_effect)), and AI amplifies that tendency. Force written justification for every mechanic: if it doesn’t teach or engage, it’s noise.
 -->
-
 
 ---
 layout: section
@@ -217,13 +215,12 @@ Both are **free, open source**, and designed to lower the technical barrier so y
 
 <!--
 Talking points:
-- The primitive matters more than the tool. Twine's primitive is a *passage* (a text node with outgoing links); GDevelop's primitive is an *event* (a Condition→Action rule). Choose based on what your core loop actually does.
-- "No-code" vs "low-code" is real: Twine literally needs zero programming knowledge for a working prototype; GDevelop needs you to think procedurally even though there's no syntax.
-- Both export to web. Both are free, both are open source. There is no licensing risk for student work.
+- The primitive matters more than the tool. Twine's primitive is a *passage* (a text node with outgoing links); GDevelop's primitive is an *event* (a Condition→Action rule). We choose based on what our core loop actually does.
+- "No-code" vs "low-code" is real: Twine literally needs zero programming knowledge for a working prototype; GDevelop needs us to think procedurally even though there's no syntax.
+- Both export to web. Both are free, both are open source.
 - Discourage tool-shopping. Pick one in week 1 and commit. Switching tools mid-project burns time that should go into the LM-GM mapping and content.
-- If a group has a hybrid core loop (e.g. clinical reasoning with timed pressure), Twine wins because narrative dominates. If the core loop is action-driven with embedded text, GDevelop wins because text is easy to add but real-time logic isn't easy in Twine.
+- If any of us has a hybrid core loop (e.g. clinical reasoning with timed pressure), Twine wins because narrative dominates. If the core loop is action-driven with embedded text, GDevelop wins because text is easy to add but real-time logic isn't easy in Twine.
 -->
-
 
 ---
 layout: section
@@ -254,7 +251,6 @@ Talking points:
 - The original-vs-revisit mechanic is the cleanest example of role-taking I've seen in literature. It's the SGM that turns this from a quiz into something else.
 - Controlled study: this is rare in serious games. Most papers describe a game and stop. Academical actually measured against a baseline (web-based RCR materials) and won.
 -->
-
 
 ---
 layout: two-cols
@@ -323,7 +319,7 @@ Talking points:
 - The mapping here is ours, not from the original paper. Melcer et al. describe Academical in their own terms; we re-cast it through LM-GM as an exercise.
 - Notice the SGM "Choose dialogue from two perspectives" — that's the unit of design innovation. Without the replay-from-the-other-side mechanic, this is just a choice-based quiz.
 - *Pareto Optimal* as a GM is unusual: most games have a single best ending. Here, no ending dominates — each perspective reveals trade-offs invisible from the other side. That's what teaches moral reasoning.
-- This is the exercise students should do for their own game: take their LM list, take their GM list, identify the SGM that bridges them, and write a row in the table for each one.
+- This is the exercise we should do for our own game: take LM and GM sets, identify the SGM that bridges them, and write a row in the table for each one.
 -->
 
 ---
@@ -352,7 +348,7 @@ A platformer serious game built in **GDevelop** as a proof of concept of a model
 
 <!--
 Talking points:
-- Pick this case for groups with technical or procedural content: Refactor Quest (refactoring tactics), Sprint Flow Manager (Scrum events), Quantum Tic-Tac-Toe (move semantics). The platformer-as-content-delivery genre maps cleanly to any topic where there are discrete correct answers.
+- Pick this case for games with technical or procedural content: Refactor Quest (refactoring tactics), Sprint Flow Manager (Scrum events), Quantum Tic-Tac-Toe (move semantics). The platformer-as-content-delivery genre maps cleanly to any topic where there are discrete correct answers.
 - The paper's contribution is the *semi-automatic generation model*, not the game itself. The game is the proof of concept. This is a useful pattern: don't sell the game, sell the methodology that produced it.
 - 75 students is a respectable sample for serious-games research. Many published SG papers evaluate with N<30.
 - The "wrong answer costs a life" mechanic is classic *negative feedback* — it works because it preserves flow. Compare with NeurEscape, where wrong answers will need a different feedback strategy that doesn't break the escape-room tension.
@@ -424,8 +420,8 @@ LM‑GM mapping built by applying the Arnab et al. (2015) framework — not repr
 Talking points:
 - The SGM here ("Answer correctly to advance") is *gate-based* — discrete checkpoints. Compare with Academical's SGM, which is *continuous role-taking*. Two completely different ways to bridge LM-GM, both valid.
 - The platforming itself doesn't teach relational algebra. The platforming exists to make the quiz tolerable. This is honest design: the game part is for engagement, the gate part is for content. The SGM holds them together.
-- A student might ask: "couldn't this be a Kahoot quiz?" The answer: yes, but the platformer adds intrinsic motivation that Kahoot's extrinsic competition can't replicate. The lit (Wouters, Plass, others) shows this matters for retention over time.
-- Encourage students to think: which SGM pattern fits their game? Gate-based, role-taking, both, or something else?
+- One might ask: "couldn't this be a Kahoot quiz?" The answer: yes, but the platformer adds intrinsic motivation that Kahoot's extrinsic competition can't replicate. The lit (Wouters, Plass, others) shows this matters for retention over time.
+- Critical design question: which SGM pattern fits our game? Gate-based, role-taking, both, or something else?
 -->
 
 ---
@@ -519,4 +515,4 @@ class: text-center
 
 ## Thank you 🙏
 
-> Bring your Stage 1 dossier and your draft LM-GM table to the next session.
+> Bring your Stage 1 dossier and your draft LM-GM table to the next feedback session starting on 25/5/26.
